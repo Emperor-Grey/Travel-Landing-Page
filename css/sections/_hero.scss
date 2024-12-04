@@ -1,0 +1,235 @@
+.hero {
+  max-width: 84rem;
+  margin: 0 auto;
+  padding: 2rem 10rem;
+}
+
+.hero__heading {
+  text-align: center;
+  font-size: 7rem;
+  line-height: -2.5;
+  font-weight: 400;
+  font-family: 'Gilda Display', serif;
+}
+
+.hero__heading > span {
+  color: #25a59e;
+}
+
+.hero__body-img {
+  width: 100%;
+  margin: 0 auto;
+  transform: translateY(2%);
+  -webkit-transform: translateY(2%);
+  -moz-transform: translateY(2%);
+  -ms-transform: translateY(2%);
+  -o-transform: translateY(2%);
+}
+
+.hero__body {
+  overflow: hidden;
+  transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+}
+
+.hero__bodyimg {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  position: relative;
+}
+
+.hero__circle {
+  position: absolute;
+  width: 56rem;
+  height: 56rem;
+  inset: 0;
+  margin: 0 auto;
+  transform: translateY(-33%);
+  z-index: -99;
+  clip-path: circle(50% at 50% 100%);
+  background-color: #ee8f39;
+  -webkit-transform: translateY(-33%);
+  -moz-transform: translateY(-33%);
+  -ms-transform: translateY(-33%);
+  -o-transform: translateY(-33%);
+}
+
+.hero__circle-gradient {
+  position: absolute;
+  width: 60rem;
+  height: 60rem;
+  inset: 0;
+  margin: 0 auto;
+  //opacity: 0.6;
+  z-index: -100;
+  border: 0.8em solid #44d5cd;
+  border-radius: 50%;
+  rotate: 270deg;
+  transform: translateX(-6%);
+  background: linear-gradient(
+    135deg,
+    rgba(68, 213, 205, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  filter: blur(30px);
+  -webkit-filter: blur(30px);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateX(-6%);
+  -moz-transform: translateX(-6%);
+  -ms-transform: translateX(-6%);
+  -o-transform: translateX(-6%);
+}
+
+.hero__circle-outline {
+  position: absolute;
+  width: 60rem;
+  height: 60rem;
+  inset: 0;
+  margin: 0 auto;
+  z-index: -99;
+  border: 0.3rem solid #ee8f39;
+  border-radius: 50%;
+
+  clip-path: circle(50% at 50% 100%);
+  -webkit-clip-path: inset(0 0 50% 0);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  transform: translateY(13%);
+  -webkit-transform: translateY(13%);
+  -moz-transform: translateY(13%);
+  -ms-transform: translateY(13%);
+  -o-transform: translateY(13%);
+}
+
+.hero__content {
+  background-color: #25a59e;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  text-wrap: balance;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.line {
+  width: 0.1rem;
+  height: 5rem;
+  background-color: #fff;
+  margin: 0 1rem;
+}
+
+.hero__content-desc-left,
+.hero__content-desc-right {
+  font-size: 1rem;
+  color: white;
+}
+
+.hero__content-desc-center {
+  font-size: 2rem;
+  color: white;
+  font-family: 'Gilda Display', serif;
+}
+
+// @media (max-width: 1224px) {
+//   /* Styles for tablets */
+//   .hero {
+//     padding: 1rem 4rem;
+//   }
+
+//   .hero__heading {
+//     font-size: 120px;
+//   }
+
+//   .hero__circle,
+//   .hero__circle-gradient,
+//   .hero__circle-outline {
+//     width: 750px;
+//     height: 750px;
+//     transform: translateY(-25%);
+//   }
+
+//   .hero__content {
+//     padding: 1.5rem 4rem;
+//   }
+
+//   .hero__bodyimg {
+//     padding-left: 4rem;
+//     padding-right: 4rem;
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   /* Styles for smaller tablets or large phones */
+//   .hero {
+//     padding: 1rem 3rem;
+//   }
+
+//   .hero__heading {
+//     font-size: 90px;
+//   }
+
+//   .hero__circle,
+//   .hero__circle-gradient,
+//   .hero__circle-outline {
+//     width: 600px;
+//     height: 600px;
+//     transform: translateY(-20%);
+//   }
+
+//   .hero__content {
+//     padding: 1.5rem 3rem;
+//   }
+
+//   .hero__bodyimg {
+//     padding-left: 2rem;
+//     padding-right: 2rem;
+//   }
+
+//   .line {
+//     display: none; /* Hide decorative lines on smaller screens */
+//   }
+// }
+
+// @media (max-width: 600px) {
+//   /* Styles for small phones */
+//   .hero {
+//     padding: 1rem 2rem;
+//     max-width: 100%;
+//   }
+
+//   .hero__heading {
+//     font-size: 50px; /* Make heading smaller */
+//   }
+
+//   .hero__circle,
+//   .hero__circle-gradient,
+//   .hero__circle-outline {
+//     width: 450px;
+//     height: 450px;
+//     transform: translateY(-15%);
+//   }
+
+//   .hero__content {
+//     flex-direction: column; /* Stack content vertically */
+//     padding: 1rem 2rem;
+//     text-align: center;
+//   }
+
+//   .hero__bodyimg {
+//     padding-left: 1rem;
+//     padding-right: 1rem;
+//   }
+
+//   .line {
+//     transform: rotate(90deg);
+//   }
+// }

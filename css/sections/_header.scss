@@ -1,0 +1,27 @@
+@use './util.scss' as util;
+
+.header__menu {
+  @include util.flex-center;
+}
+
+.header {
+  max-width: 95rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header__nav {
+  @include util.flex-between;
+  padding-top: 1.5rem;
+}
+
+.header__nav-logo {
+  font-size: 2rem;
+  color: #25a59e;
+  font-weight: 600;
+  font-family: 'Gilda Display', serif;
+}
+
+.header__nav-menu {
+  color: #262626;
+}

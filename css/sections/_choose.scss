@@ -1,0 +1,79 @@
+.choose {
+  padding: 4rem 6rem;
+  height: auto;
+}
+
+.choose__heading {
+  padding: 0 12rem 4rem 12rem;
+}
+
+.choose__heading-text {
+  font-family: 'Gilda Display', serif;
+  font-size: 4rem;
+  color: #262626;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.choose__heading-desc {
+  color: #737373;
+  text-align: center;
+  font-weight: 600;
+}
+
+.choose__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+}
+
+.choose__cards-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: end;
+  padding: 1rem 1rem 3rem 1rem;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  border-top: 0.3rem solid #25a59e;
+
+  &.selected {
+    background-color: #25a59e;
+  }
+}
+
+.choose__card-title {
+  font-family: 'Gilda Display', serif;
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #262626;
+  &.selected {
+    color: white;
+  }
+}
+
+.choose__card-desc {
+  color: #737373;
+  font-weight: 400;
+  font-size: 1rem;
+  text-wrap: balance;
+  margin: 1rem 0 6rem 0;
+
+  &.selected {
+    color: white;
+  }
+}
+
+.choose__card-button {
+  color: #25a59e;
+  background: none;
+  font-size: 1rem;
+  font-family: 'Gilda Display', serif;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+
+  &.selected {
+    color: white;
+    border-color: white;
+  }
+}
